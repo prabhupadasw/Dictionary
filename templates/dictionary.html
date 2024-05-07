@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+</head>
+<body>
+    <h1>Dictionary</h1>
+    <form method="GET" action="">
+        <input type="text" name="search" placeholder="Enter a word">
+        <button type="submit">Search</button>
+    </form>
+    {% if meaning %}
+        <h2>Meaning of {{ search }}</h2>
+        <p>{{ meaning }}</p>
+        <h2>Synonyms</h2>
+        <p>{{ synonyms }}</p>
+        <h2>Antonyms</h2>
+        <p>{{ antonyms }}</p>
+    {% endif %}
+</body>
+</html>
